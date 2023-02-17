@@ -1,0 +1,883 @@
+fileFormatVersion: 2
+guid: d8fb241fc90f51e4688af3f2f99b84cf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 347
+        width: 80
+        height: 51
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29574b7c3b1b5e246bd1a5ce90cfa109
+      internalID: -202422754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 347
+        width: 79
+        height: 50
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6928a6b1f93e7ca42bd4168b592c951c
+      internalID: 2064869926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 347
+        width: 81
+        height: 50
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71f03291d32426429632ad1ef5f1b50
+      internalID: 2074231798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 347
+        width: 81
+        height: 50
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a60560c647f6ea74eaba7641c00e1e3e
+      internalID: 423924476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_4
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 347
+        width: 80
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187ad439c074d834586b71183fe0a550
+      internalID: 1082178971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_5
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 350
+        width: 78
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330d88f545b365041b51f143ab9b6c1c
+      internalID: 2092770020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_6
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 351
+        width: 81
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b437a260eb68c4a8696591281cef5c
+      internalID: 169044853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_7
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 351
+        width: 81
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb50ad3b9aaa5d046831dc86971c5b71
+      internalID: 1426450936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_8
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 354
+        width: 82
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5b13630e8b2404a88dc616834629a7
+      internalID: -1614687575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_9
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 349
+        width: 78
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d68535a080dfda44a9693fb5425ef4f
+      internalID: -1315769628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 242
+        width: 145
+        height: 74
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c23a96d10fe8d48821802005369bb7
+      internalID: 1907803020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 240
+        width: 156
+        height: 78
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e881e3224d58b848beba747225f5977
+      internalID: -746627243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_12
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 240
+        width: 155
+        height: 78
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5cdeada65c59d4aa18ea889248d208
+      internalID: 2031669689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_13
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 250
+        width: 80
+        height: 57
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3607ff987d0e54db2315545cd7984f
+      internalID: -1741789409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_14
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 250
+        width: 81
+        height: 54
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ce35c6ef8846429b9861462661bf5
+      internalID: 225322897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_15
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 301
+        width: 6
+        height: 6
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb785a36bb97d774684e32c0b8d077b5
+      internalID: 856613057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_16
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 250
+        width: 80
+        height: 57
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304e7a0a1953ff24dbcef06ada21eab9
+      internalID: 1702340106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_17
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 134
+        width: 79
+        height: 65
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60cd6c2f18970c49b44734a88cb1445
+      internalID: 69592377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_18
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 153
+        width: 82
+        height: 60
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e665eb0d5deecc4ca6ba69a87ab9a63
+      internalID: 162756376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_19
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 168
+        width: 80
+        height: 53
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17308536873d63f4ebe96fe44308a3f4
+      internalID: -460901881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_20
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 162
+        width: 79
+        height: 54
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57704c09ae8e2744bb3285606e410da0
+      internalID: 58721394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_21
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 121
+        width: 80
+        height: 61
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e2348f5f5d2b24dbce0916438954d7
+      internalID: 1484038589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_22
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 94
+        width: 79
+        height: 52
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0014e1262a3786449b8d9ef7943df864
+      internalID: -448027794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_23
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 102
+        width: 78
+        height: 63
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f296686fbddda4f80d74354160ca13
+      internalID: 2136536848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_24
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 94
+        width: 79
+        height: 53
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35455f4ff61e4f4b91c0ee9238cf72e
+      internalID: 226732782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_25
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 83
+        height: 64
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a678fae8f94c67a40bcc704dc0848a83
+      internalID: -930844583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_26
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 85
+        height: 64
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8594c0f644974fa42a7404368cf0f925
+      internalID: -1909775330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_27
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 0
+        width: 81
+        height: 63
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79581213c0009f43a99b3a11d108154
+      internalID: -618040090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_28
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1
+        width: 83
+        height: 64
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483de3b8486892a4ab80e9e71b69dedc
+      internalID: 1924855539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_29
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 85
+        height: 65
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d905391d8239c2a4c8cbd5fd44d5f3e0
+      internalID: -452064743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_30
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 3
+        width: 77
+        height: 52
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6466b7fe3e1e87746a2e1228c1626817
+      internalID: -1226688641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_31
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 0
+        width: 79
+        height: 41
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eecf3f723028104ba4701df351d3e8a
+      internalID: -1883573173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_32
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 0
+        width: 82
+        height: 36
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fee11a97cad9f41a0e74f7e06a505a
+      internalID: -422199199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: puppy-dog-game-sprites-vector-21861404 (2)_33
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 0
+        width: 82
+        height: 36
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415ce0b3aa0aaf74585ec1193f7bc2f7
+      internalID: -29687996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      puppy-dog-game-sprites-vector-21861404 (2)_7: 1426450936
+      puppy-dog-game-sprites-vector-21861404 (2)_19: -460901881
+      puppy-dog-game-sprites-vector-21861404 (2)_23: 2136536848
+      puppy-dog-game-sprites-vector-21861404 (2)_31: -1883573173
+      puppy-dog-game-sprites-vector-21861404 (2)_20: 58721394
+      puppy-dog-game-sprites-vector-21861404 (2)_4: 1082178971
+      puppy-dog-game-sprites-vector-21861404 (2)_8: -1614687575
+      puppy-dog-game-sprites-vector-21861404 (2)_32: -422199199
+      puppy-dog-game-sprites-vector-21861404 (2)_14: 225322897
+      puppy-dog-game-sprites-vector-21861404 (2)_9: -1315769628
+      puppy-dog-game-sprites-vector-21861404 (2)_25: -930844583
+      puppy-dog-game-sprites-vector-21861404 (2)_1: 2064869926
+      puppy-dog-game-sprites-vector-21861404 (2)_12: 2031669689
+      puppy-dog-game-sprites-vector-21861404 (2)_5: 2092770020
+      puppy-dog-game-sprites-vector-21861404 (2)_2: 2074231798
+      puppy-dog-game-sprites-vector-21861404 (2)_16: 1702340106
+      puppy-dog-game-sprites-vector-21861404 (2)_3: 423924476
+      puppy-dog-game-sprites-vector-21861404 (2)_24: 226732782
+      puppy-dog-game-sprites-vector-21861404 (2)_6: 169044853
+      puppy-dog-game-sprites-vector-21861404 (2)_28: 1924855539
+      puppy-dog-game-sprites-vector-21861404 (2)_0: -202422754
+      puppy-dog-game-sprites-vector-21861404 (2)_11: -746627243
+      puppy-dog-game-sprites-vector-21861404 (2)_26: -1909775330
+      puppy-dog-game-sprites-vector-21861404 (2)_27: -618040090
+      puppy-dog-game-sprites-vector-21861404 (2)_17: 69592377
+      puppy-dog-game-sprites-vector-21861404 (2)_33: -29687996
+      puppy-dog-game-sprites-vector-21861404 (2)_30: -1226688641
+      puppy-dog-game-sprites-vector-21861404 (2)_22: -448027794
+      puppy-dog-game-sprites-vector-21861404 (2)_15: 856613057
+      puppy-dog-game-sprites-vector-21861404 (2)_10: 1907803020
+      puppy-dog-game-sprites-vector-21861404 (2)_13: -1741789409
+      puppy-dog-game-sprites-vector-21861404 (2)_21: 1484038589
+      puppy-dog-game-sprites-vector-21861404 (2)_29: -452064743
+      puppy-dog-game-sprites-vector-21861404 (2)_18: 162756376
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
