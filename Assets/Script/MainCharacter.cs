@@ -21,6 +21,7 @@ public class MainCharacter : MonoBehaviour
 
     private Rigidbody2D _rigidBody;
     private Coroutine _underWaterCoroutine;
+    private WaitForSeconds _underwaterSecondsWait;
     private int _defaultHealth = 3;
     private bool _isUnderWater;
 
@@ -29,7 +30,7 @@ public class MainCharacter : MonoBehaviour
     public int Health { get; private set; }
     public int AppleCount { get; private set; }
     public bool IsAlive { get; private set; }
-    public bool IsMainCharacterSprite { get; private set; }
+    public bool IsTransformed { get; private set; }
 
     private void Start()
     {
@@ -37,7 +38,7 @@ public class MainCharacter : MonoBehaviour
         Health = _defaultHealth;
         _rigidBody = GetComponent<Rigidbody2D>();
         HumanoidMover = GetComponent<HumanoidMover>();
-        IsMainCharacterSprite = true;
+        _underwaterSecondsWait = new WaitForSeconds(_timeOfLifeUnderWater);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,7 +51,7 @@ public class MainCharacter : MonoBehaviour
 
     private void TryToDrown(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Lake lake) && IsMainCharacterSprite)
+        if (collision.TryGetComponent(out Lake lake) && IsTransformed == false)
         {
             _isUnderWater = true;
             _underWaterCoroutine = StartCoroutine(WaitFewSecondsBeforeDrownJob(_timeOfLifeUnderWater));
@@ -68,7 +69,7 @@ public class MainCharacter : MonoBehaviour
 
     private IEnumerator WaitFewSecondsBeforeDrownJob(float secondsToWaitUnderWater)
     {
-        yield return new WaitForSeconds(secondsToWaitUnderWater);
+        yield return _underwaterSecondsWait;
         
         if (_isUnderWater)
             IsAlive = false;
@@ -77,7 +78,7 @@ public class MainCharacter : MonoBehaviour
 
     private bool TryTakeDamage(Collider2D collision)
     {
-        if (collision.TryGetComponent(out Enemy enemy) && _characterSprite.AnimationHitIsPlay == false && IsAlive && IsMainCharacterSprite)
+        if (collision.TryGetComponent(out Enemy enemy) && _characterSprite.AnimationHitIsPlay == false && IsAlive && IsTransformed == false)
         {
             _damageTaken.Invoke();
             CastAside(collision);
@@ -117,8 +118,8 @@ public class MainCharacter : MonoBehaviour
         HaveAKey = true;
     }
 
-    public void SetBoolIsMainCharacterSpriteFalse()
+    public void TransformInToGhost()
     {
-        IsMainCharacterSprite = false;
+        IsTransformed = true;
     }
 }

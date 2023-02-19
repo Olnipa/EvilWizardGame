@@ -41,18 +41,18 @@ public class DialogueHandler : MonoBehaviour
                 _text.text = _dialogueTexts[DestroyMoreMessageIndex];
                 _text.enabled = true;
             }
-            else if (mainCharacter.AppleCount == _appleHandler.TotalAppleCount && mainCharacter.IsMainCharacterSprite && mainCharacter.HaveAKey == false)
+            else if (mainCharacter.AppleCount == _appleHandler.TotalAppleCount && mainCharacter.IsTransformed && mainCharacter.HaveAKey == false)
             {
                 _text.text = _dialogueTexts[FindKeyMessageIndex];
                 _text.enabled = true;
                 _platform.gameObject.SetActive(true);
             }
-            else if (mainCharacter.HaveAKey && mainCharacter.IsMainCharacterSprite)
+            else if (mainCharacter.HaveAKey && mainCharacter.IsTransformed)
             {
                 _text.text = _dialogueTexts[FindChestMessageIndex];
                 _text.enabled = true;
             }
-            else if (mainCharacter.IsMainCharacterSprite == false)
+            else if (mainCharacter.IsTransformed == false)
             {
                 _text.text = _dialogueTexts[FinalMessageIndex];
                 _text.enabled = true;
@@ -66,7 +66,7 @@ public class DialogueHandler : MonoBehaviour
         {
             _text.enabled = false;
 
-            if (mainCharacter.IsMainCharacterSprite == false)
+            if (mainCharacter.IsTransformed == false)
             {
                 _finishGameHandler.StartFinishGameScene();
             }

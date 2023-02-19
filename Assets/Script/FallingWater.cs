@@ -10,17 +10,19 @@ public class FallingWater : MonoBehaviour
     [SerializeField] private float _timeBetweenDrops;
 
     private Animator _animator;
+    private WaitForSeconds _secondsBetweenDrop;
 
     private const string WaterDropped = "WaterDropped";
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
+        _secondsBetweenDrop = new WaitForSeconds(_timeBetweenDrops);
     }
 
     private IEnumerator WaitBeforeNextDropJob()
     {
-        yield return new WaitForSeconds(_timeBetweenDrops);
+        yield return _secondsBetweenDrop;
         _animator.SetTrigger(WaterDropped);
     }
 

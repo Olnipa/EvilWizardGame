@@ -15,11 +15,11 @@ public class SpriteSpinner : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void Update()
+    public void RotateSprite()
     {
-        if (_enemyMover.IsMovingBack)
-            _spriteRenderer.flipX = true;
-        else
+        if (_spriteRenderer.flipX == true)
             _spriteRenderer.flipX = false;
+        else
+            _spriteRenderer.flipX = true;
     }
 }

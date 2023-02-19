@@ -13,6 +13,12 @@ public class FinishGameHandler : MonoBehaviour
     [SerializeField] private BackgroundMusicHandler _backgroundMusicHandler;
 
     private float _secondsToWait = 5;
+    private WaitForSeconds _sleepTimeBeforeFinalScene;
+
+    private void Start()
+    {
+        _sleepTimeBeforeFinalScene = new WaitForSeconds(_secondsToWait);
+    }
 
     private void MoveCharacterToChest()
     {
@@ -36,7 +42,8 @@ public class FinishGameHandler : MonoBehaviour
 
     private IEnumerator ShowTheEndBackgroundJob()
     {
-        yield return new WaitForSeconds(_secondsToWait);
+        yield return _sleepTimeBeforeFinalScene;
+
         _finalScreen.gameObject.SetActive(true);
         _backgroundMusicHandler.PlayGhostMusic();
         _finalSound.Play();

@@ -7,16 +7,18 @@ public class EnemyMover : MonoBehaviour
 {
     [SerializeField] private float _speed = 2f;
     [SerializeField] public Transform _endPointTransform;
+    [SerializeField] private SpriteSpinner _spriteSpinner;
 
     private Vector3 _initialPosition;
     private Vector3 _nextTargetPosition;
-
-    public bool IsMovingBack { get; private set; }
 
     private void Start()
     {
         _initialPosition = transform.position;
         _nextTargetPosition = _endPointTransform.position;
+
+        if (_nextTargetPosition.x < transform.position.x)
+            _spriteSpinner.RotateSprite();
     }
 
     private void Update()
@@ -26,15 +28,12 @@ public class EnemyMover : MonoBehaviour
         if (transform.position.x == _endPointTransform.position.x)
         {
             _nextTargetPosition = _initialPosition;
+            _spriteSpinner.RotateSprite();
         }
         else if (transform.position.x == _initialPosition.x)
         {
             _nextTargetPosition = _endPointTransform.position;
+            _spriteSpinner.RotateSprite();
         }
-
-        if (_nextTargetPosition.x < transform.position.x)
-            IsMovingBack = true;
-        else
-            IsMovingBack = false;
     }
 }

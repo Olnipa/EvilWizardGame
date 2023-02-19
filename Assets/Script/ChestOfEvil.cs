@@ -32,7 +32,7 @@ public class ChestOfEvil : MonoBehaviour
                 _animator.SetTrigger(OpenChestTrigger);
                 _characterSprite.Animator.runtimeAnimatorController = _newCharacterAnimatorController;
                 _character.HumanoidMover.enabled = false;
-                _character.SetBoolIsMainCharacterSpriteFalse();
+                _character.TransformInToGhost();
                 _character.AddComponent<GhostMover>();
                 _audioSource.Play();
                 _backgroundMusicHandler.PlayGhostMusic();

@@ -31,17 +31,17 @@ public class CharacterSprite : MonoBehaviour
             {
                 RotateSprite(false);
     
-                if (_character.IsMainCharacterSprite)
+                if (_character.IsTransformed)
                     SetIsMovingAnimation(true);
             }
             else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
                 RotateSprite(true);
 
-                if (_character.IsMainCharacterSprite)
+                if (_character.IsTransformed)
                     SetIsMovingAnimation(true);
             }
-            else if (_character.IsMainCharacterSprite)
+            else if (_character.IsTransformed)
             {
                     SetIsMovingAnimation(false);
             }

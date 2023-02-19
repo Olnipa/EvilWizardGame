@@ -8,7 +8,7 @@ public class CaveTerritory : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out MainCharacter character) && character.IsMainCharacterSprite)
+        if (collision.TryGetComponent(out MainCharacter character) && character.IsTransformed)
         {
             _musicHandler.PlayCaveMusic();
         }
@@ -16,7 +16,7 @@ public class CaveTerritory : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out MainCharacter character) && character.IsMainCharacterSprite)
+        if (collision.TryGetComponent(out MainCharacter character) && character.IsTransformed)
         {
             _musicHandler.PlayMainMusic();
         }

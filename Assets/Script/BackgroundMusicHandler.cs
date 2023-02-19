@@ -15,6 +15,7 @@ public class BackgroundMusicHandler : MonoBehaviour
     private float _maxVolume = 0.5f;
     private float _defaltMaxVolume = 1f;
     private Coroutine _coroutine;
+    private WaitForSeconds _sleepBeforeChangeVolume;
 
     public AudioSource ActualAudio { get; private set; }
 
@@ -42,7 +43,7 @@ public class BackgroundMusicHandler : MonoBehaviour
         _caveThemeAudio.Play();
         _caveThemeAudio.Pause();
         _ghostAudio.Play();
-        _ghostAudio.Pause();    
+        _ghostAudio.Pause();
     }
 
     private IEnumerator ChangeVolumeJob(bool toVolumeDown)
@@ -58,6 +59,8 @@ public class BackgroundMusicHandler : MonoBehaviour
         if (timeToWait <= 0)
             timeToWait = 1;
 
+        _sleepBeforeChangeVolume = new WaitForSeconds(timeToWait);
+
         if (toVolumeDown)
             targetVolume = _minVolume;
         else
@@ -65,10 +68,9 @@ public class BackgroundMusicHandler : MonoBehaviour
 
         while (ActualAudio.volume != targetVolume)
         {
-            Debug.Log("Volume: " + ActualAudio.volume);
             ActualAudio.volume = Mathf.MoveTowards(ActualAudio.volume, targetVolume, _unitOfVolumeChange);
 
-            yield return new WaitForSecondsRealtime(timeToWait);
+            yield return _sleepBeforeChangeVolume;
         }
     }
 
