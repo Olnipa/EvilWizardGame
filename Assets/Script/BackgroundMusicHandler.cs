@@ -13,6 +13,7 @@ public class BackgroundMusicHandler : MonoBehaviour
 
     private float _minVolume = 0;
     private float _maxVolume = 0.5f;
+    private float _defaltMaxVolume = 1f;
     private Coroutine _coroutine;
 
     public AudioSource ActualAudio { get; private set; }
@@ -49,7 +50,13 @@ public class BackgroundMusicHandler : MonoBehaviour
         float targetVolume;
         float timeToWait;
 
-        timeToWait = _timeToChangeVolume / (_maxVolume / _unitOfVolumeChange);
+        if (_maxVolume <= 0)
+            _maxVolume = _defaltMaxVolume;
+
+        timeToWait = _timeToChangeVolume * _unitOfVolumeChange / _maxVolume;
+
+        if (timeToWait <= 0)
+            timeToWait = 1;
 
         if (toVolumeDown)
             targetVolume = _minVolume;

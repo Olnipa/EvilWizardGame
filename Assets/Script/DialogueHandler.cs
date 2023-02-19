@@ -11,20 +11,21 @@ public class DialogueHandler : MonoBehaviour
     [SerializeField] private FinishGameHandler _finishGameHandler;
     /*[SerializeField] private ChestOfEvil _chest;*/
     [SerializeField] private Platform _platform;
+    [SerializeField] private string[] _dialogueTexts;
 
     private TextMeshPro _text;
 
-    private const string HelloMessage = "Hello! I see that this wizard turned you into a living chicken leg. Help me please. Eat all those apples on the other side of the lake and then I will help you.";
-    private const string MessageDestroyMore = "I feel there are more apples exist. Please, eat all of them.";
-    private const string MessageFindKey = "You've eaten all of them. Thank you! Now listen to me carefully: I saw how wizard was hiding something yellow under the dog's plate. I hope it will help you! Good luck!";
-    private const string MessageBeforeOpenChest = "You found a key! Now open the chest under the apple tree...";
-    private const string MessageToGhost = "Ahaha, I see that you managed to open the chest. Great work. And now you will join the ranks of my guards. Ahahaha.";
+    private const int HelloMessageIndex = 0;
+    private const int DestroyMoreMessageIndex = 1;
+    private const int FindKeyMessageIndex = 2;
+    private const int FindChestMessageIndex = 3;
+    private const int FinalMessageIndex = 4;
 
     private void Awake()
     {
         _text = GetComponent<TextMeshPro>();
         _text.enabled = false;
-        _text.text = HelloMessage;
+        _text.text = _dialogueTexts[HelloMessageIndex];
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,23 +38,23 @@ public class DialogueHandler : MonoBehaviour
             }
             else if (mainCharacter.AppleCount > 0 && mainCharacter.AppleCount < _appleHandler.TotalAppleCount)
             {
-                _text.text = MessageDestroyMore;
+                _text.text = _dialogueTexts[DestroyMoreMessageIndex];
                 _text.enabled = true;
             }
             else if (mainCharacter.AppleCount == _appleHandler.TotalAppleCount && mainCharacter.IsMainCharacterSprite && mainCharacter.HaveAKey == false)
             {
-                _text.text = MessageFindKey;
+                _text.text = _dialogueTexts[FindKeyMessageIndex];
                 _text.enabled = true;
                 _platform.gameObject.SetActive(true);
             }
             else if (mainCharacter.HaveAKey && mainCharacter.IsMainCharacterSprite)
             {
-                _text.text = MessageBeforeOpenChest;
+                _text.text = _dialogueTexts[FindChestMessageIndex];
                 _text.enabled = true;
             }
             else if (mainCharacter.IsMainCharacterSprite == false)
             {
-                _text.text = MessageToGhost;
+                _text.text = _dialogueTexts[FinalMessageIndex];
                 _text.enabled = true;
             }
         }

@@ -28,14 +28,12 @@ public class ChestOfEvil : MonoBehaviour
         {
             if (_character.HaveAKey && IsOpen == false)
             {
+                IsOpen = true;
                 _animator.SetTrigger(OpenChestTrigger);
-                Animator characterAnimator = _characterSprite.GetComponent<Animator>();
-                characterAnimator.runtimeAnimatorController = _newCharacterAnimatorController;
-                HumanoidMover humanoidMover = _character.GetComponent<HumanoidMover>();
-                humanoidMover.enabled = false;
+                _characterSprite.Animator.runtimeAnimatorController = _newCharacterAnimatorController;
+                _character.HumanoidMover.enabled = false;
                 _character.SetBoolIsMainCharacterSpriteFalse();
                 _character.AddComponent<GhostMover>();
-                IsOpen = true;
                 _audioSource.Play();
                 _backgroundMusicHandler.PlayGhostMusic();
             }

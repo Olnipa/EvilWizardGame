@@ -15,7 +15,7 @@ public class HumanoidMover : MonoBehaviour
 
     private LayerMask _layerMask;
     private Vector2 _velocity;
-    private float _minGroundNormalY = .65f;
+    private float _minGroundNormalY = 0.65f;
 
     private Vector2 _groundNormal;
     private Rigidbody2D _rigidBody;
@@ -28,6 +28,7 @@ public class HumanoidMover : MonoBehaviour
     private const float ConstantGravityModifier = 2f;
     private const float MinMoveDistance = 0.001f;
     private const float ShellRadius = 0.01f;
+
     private const string HorizontalAxisName = "Horizontal";
     private const string DefalustLayerName = "Default";
     

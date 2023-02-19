@@ -9,16 +9,17 @@ public class CharacterSprite : MonoBehaviour
 {
     [SerializeField] private MainCharacter _character;
 
-    private Animator _animator;
     private SpriteRenderer _spriteRenderer;
+
     private const string IsMovingAnimation = "IsMoving";
     private const string AnimationHitName = "Hit";
     
+    public Animator Animator { get; private set; }
     public bool AnimationHitIsPlay { get; private set; }
 
     private void Start()
     {
-        _animator = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -49,7 +50,7 @@ public class CharacterSprite : MonoBehaviour
 
     private void SetIsMovingAnimation(bool isMoving)
     {
-        _animator.SetBool(IsMovingAnimation, isMoving);
+        Animator.SetBool(IsMovingAnimation, isMoving);
     }
 
     private void RotateSprite(bool isTurnLeft)
@@ -66,7 +67,7 @@ public class CharacterSprite : MonoBehaviour
     {
         if (AnimationHitIsPlay == false)
         {
-            _animator.SetTrigger(AnimationHitName);
+            Animator.SetTrigger(AnimationHitName);
             AnimationHitIsPlay = true;
         }
     }

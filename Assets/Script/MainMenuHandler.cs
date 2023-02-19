@@ -7,6 +7,13 @@ public class MainMenuHandler : MonoBehaviour
 {
     [SerializeField] private MainMenuHandler _mainMenu;
 
+    private int currentSceneIndex;
+
+    private void Start()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    }
+
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape) && _mainMenu.gameObject.activeSelf == false)
@@ -21,7 +28,7 @@ public class MainMenuHandler : MonoBehaviour
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void ContinueButton()

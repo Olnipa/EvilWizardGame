@@ -5,23 +5,26 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(HumanoidMover))]
 
 public class MainCharacter : MonoBehaviour
 {
     [SerializeField] private UIHandler _uiHandler;
     [SerializeField] private CharacterSprite _characterSprite;
-    [SerializeField] private float _horisontalHitRepelDistance = 0.07f;
-    [SerializeField] private float _verticalHitRepelDistance = 0.03f;
-    [SerializeField] private float _timeOfLifeUnderWater = 2f;
+    [SerializeField] private float _horisontalHitRepelDistance = 7f;
+    [SerializeField] private float _verticalHitRepelDistance = 5f;
+    [SerializeField] private float _timeOfLifeUnderWater = 3f;
+
     [SerializeField] private UnityAction _isMoved;
     [SerializeField] private UnityEvent _damageTaken;
     [SerializeField] private UnityEvent _deaded;
 
     private Rigidbody2D _rigidBody;
+    private Coroutine _underWaterCoroutine;
     private int _defaultHealth = 3;
     private bool _isUnderWater;
-    private Coroutine _underWaterCoroutine;
 
+    public HumanoidMover HumanoidMover { get; private set; }
     public bool HaveAKey { get; private set; }
     public int Health { get; private set; }
     public int AppleCount { get; private set; }
@@ -33,10 +36,11 @@ public class MainCharacter : MonoBehaviour
         IsAlive = true;
         Health = _defaultHealth;
         _rigidBody = GetComponent<Rigidbody2D>();
+        HumanoidMover = GetComponent<HumanoidMover>();
         IsMainCharacterSprite = true;
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (TryTakeDamage(collision) == false)
         {
@@ -62,12 +66,13 @@ public class MainCharacter : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitFewSecondsBeforeDrownJob(float secondsToWait)
+    private IEnumerator WaitFewSecondsBeforeDrownJob(float secondsToWaitUnderWater)
     {
-        yield return new WaitForSeconds(secondsToWait);
+        yield return new WaitForSeconds(secondsToWaitUnderWater);
         
         if (_isUnderWater)
             IsAlive = false;
+            _deaded.Invoke();
     }
 
     private bool TryTakeDamage(Collider2D collision)

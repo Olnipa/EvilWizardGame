@@ -6075,6 +6075,16 @@ MonoBehaviour:
   _appleHandler: {fileID: 1623083389}
   _finishGameHandler: {fileID: 519420035}
   _platform: {fileID: 978435224}
+  _dialogueTexts:
+  - Hello! I see that this wizard turned you into a living chicken leg. Help me please.
+    Eat all those apples on the other side of the lake and then I will help you.
+  - I feel there are more apples exist. Please, eat all of them.
+  - 'You''ve eaten all of them. Thank you! Now listen to me carefully: I saw how
+    wizard was hiding something yellow under the dog''s plate. I hope it will help
+    you! Good luck!'
+  - You found a key! Now open the chest under the apple tree...
+  - Ahaha, I see that you managed to open the chest. Great work. And now you will
+    join the ranks of my guards. Ahahaha.
 --- !u!61 &425512490
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8387,8 +8397,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7602366711053158309, guid: 56e2a525e0fbd93419c9b313c362934d, type: 3}
   m_PrefabInstance: {fileID: 611003112}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &611003115
-BoxCollider2D:
+--- !u!60 &611003117
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8400,7 +8410,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005648613, y: 0.484375}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -8410,9 +8420,16 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.92500114, y: 0.96875}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.35351562, y: 0.5}
+      - {x: 0.57377625, y: 0.7560291}
+      - {x: 0.609375, y: 0.96875}
+      - {x: -0.609375, y: 0.96875}
+      - {x: -0.5826225, y: 0.75369835}
+      - {x: -0.3663082, y: 0.49398518}
+      - {x: -0.4183979, y: 0.030703545}
+      - {x: 0.42917824, y: 0.030703545}
 --- !u!1001 &614553972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8486,6 +8503,82 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 625157244}
     m_Modifications:
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].x
+      value: 0.2169342
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[5].y
+      value: -0.5266099
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].x
+      value: 0.31542206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[6].y
+      value: -0.5256736
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].x
+      value: 0.3115158
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[7].y
+      value: -0.12500715
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].x
+      value: 0.31282806
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].y
+      value: -0.03206551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].x
+      value: -0.15420532
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].y
+      value: -0.028942227
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
+      value: -0.22131348
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
+      value: 0.53417206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].x
+      value: -0.22131348
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].y
+      value: 0.53417206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].x
+      value: -0.22131348
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].y
+      value: 0.53417206
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].x
+      value: -0.22131348
+      objectReference: {fileID: 0}
+    - target: {fileID: 4252649064603182335, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].y
+      value: 0.53417206
+      objectReference: {fileID: 0}
     - target: {fileID: 5684634973922905886, guid: bb67ae3035abce24aa87122c96acac22, type: 3}
       propertyPath: m_Color.b
       value: 0.61960787
@@ -12660,6 +12753,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 625157244}
     m_Modifications:
+    - target: {fileID: 7471922056857359763, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7471922057008591172, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Road Sign - A
@@ -12710,7 +12807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7471922057008591195, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
@@ -13584,7 +13681,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 23
-      m_TileSpriteIndex: 24
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -13794,7 +13891,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 23
+      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -14554,7 +14651,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 18
-      m_TileSpriteIndex: 19
+      m_TileSpriteIndex: 28
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15364,7 +15461,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 27
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15434,7 +15531,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 8
-      m_TileSpriteIndex: 20
+      m_TileSpriteIndex: 26
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15504,7 +15601,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 6
-      m_TileSpriteIndex: 16
+      m_TileSpriteIndex: 24
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15544,7 +15641,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 5
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 23
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15744,7 +15841,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 14
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -15867,46 +15964,46 @@ Tilemap:
     m_Data: {fileID: -5362793937043775683, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -7833218270530847676, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 3061041135340136042, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -8830748653819333967, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -7027587817463407376, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 7933787385540080387, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -6300742171306219350, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -4449845688393832668, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 14
     m_Data: {fileID: 4255777226033644358, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 8652677587666043219, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -8292312247121785769, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 6213293354356424504, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+    m_Data: {fileID: 3061041135340136042, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: -8399431015594367256, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 7149495969167708271, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
   - m_RefCount: 1
+    m_Data: {fileID: -8830748653819333967, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -4449845688393832668, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 2
+    m_Data: {fileID: -4074374073859113712, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 6213293354356424504, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 8652677587666043219, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -8292312247121785769, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
+  - m_RefCount: 1
     m_Data: {fileID: 724395971767576797, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 5233809694316553341, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  - m_RefCount: 2
-    m_Data: {fileID: -4074374073859113712, guid: 157cbc340d2b7e64ab85168e80e95550, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 297
     m_Data:
@@ -18681,6 +18778,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 625157244}
     m_Modifications:
+    - target: {fileID: 7471922056857359763, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7471922057008591172, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Road Sign - A (1)
@@ -18735,7 +18836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7471922057008591195, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
@@ -22086,9 +22187,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _uiHandler: {fileID: 1880689464}
   _characterSprite: {fileID: 543370365}
-  _horisontalHitRepelDistance: 1.5
+  _horisontalHitRepelDistance: 7
   _verticalHitRepelDistance: 5
-  _timeOfLifeUnderWater: 2
+  _timeOfLifeUnderWater: 3
   _damageTaken:
     m_PersistentCalls:
       m_Calls:
@@ -22203,7 +22304,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a65eccc0b5803f14bab3e3e7d2c30c6a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.28
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22299,7 +22400,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6e8fd91d2b1f92e4f96b777363c5c00a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.45
+  m_Volume: 0.17
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -23947,7 +24048,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3008790804114293261, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3008790804299420976, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_Name
@@ -23955,7 +24056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3008790804299420977, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3008790804299420990, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_RootOrder
@@ -24003,7 +24104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3008790805172985205, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
@@ -25977,13 +26078,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 625157244}
     m_Modifications:
+    - target: {fileID: 3008790804114293261, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3008790804299420976, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Road Sign - B
       objectReference: {fileID: 0}
     - target: {fileID: 3008790804299420977, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3008790804299420990, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_RootOrder
@@ -26028,6 +26133,10 @@ PrefabInstance:
     - target: {fileID: 3008790804299420990, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3008790805172985205, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
@@ -46878,7 +46987,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 1865794f2d6281b4fbc71a65f8f68005, type: 3}
   m_Color: {r: 0.8018868, g: 0.8018868, b: 0.8018868, a: 1}
   m_FlipX: 0
@@ -47116,6 +47225,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 625157244}
     m_Modifications:
+    - target: {fileID: 7471922056857359763, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7471922057008591172, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_Name
       value: PF Village Props - Road Sign - A (2)
@@ -47170,7 +47283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7471922057008591195, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbde5b0f2fde63f47aab9703a1e8e784, type: 3}
@@ -49241,15 +49354,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6036135315694218345, guid: 4951009bcb3a17a4f80ff623f25ae354, type: 3}
       propertyPath: m_Size.y
-      value: 0.60524875
+      value: 0.6551015
       objectReference: {fileID: 0}
     - target: {fileID: 6036135315694218345, guid: 4951009bcb3a17a4f80ff623f25ae354, type: 3}
       propertyPath: m_Offset.y
-      value: -0.19737561
+      value: -0.15531752
       objectReference: {fileID: 0}
     - target: {fileID: 7360728032190726775, guid: 4951009bcb3a17a4f80ff623f25ae354, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -38.2
+      value: -38.34
       objectReference: {fileID: 0}
     - target: {fileID: 7660808419087795334, guid: 4951009bcb3a17a4f80ff623f25ae354, type: 3}
       propertyPath: m_RootOrder
